@@ -34,6 +34,22 @@ body {
     font-size: 14px;
     color: #ffffff;
 }
+.door-row {
+    text-align: center;
+}
+.start-row {
+    margin: auto;
+    width: 120px;
+    height: 43px;
+    font-family: "Work Sans";
+    background-color: #eb6536;
+    padding-top: 18px;
+    font-size: 18px;
+    text-align: center;
+    color :#3737a9;
+    margin-bottom: 21px;
+    cursor: pointer;
+}
 .door-frame {
     cursor: pointer;
     padding: 10px;
