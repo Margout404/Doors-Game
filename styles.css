@@ -54,3 +54,29 @@ body {
     cursor: pointer;
     padding: 10px;
 }
+.door-frame:hover{
+    transform: scale(1.1);
+} 
+.score-text{
+    font-family: "Work Sans";
+    color: #00ffff;
+    font-size: 18px;
+}
+.score-box{
+    font-family: "Work Sans";
+    color: #00ffff;
+    font-size: 50px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 70px;
+    background-color: #3d3da9;
+    background-blend-mode: color-burn;
+    color :#00ffff;
+    border-radius: 20px;
+    text-align: center;
+
+}
+table{
+    margin: auto;
+}

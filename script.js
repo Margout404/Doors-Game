@@ -1,6 +1,10 @@
 let doorImage1 = document.getElementById('door1');
 let doorImage2 = document.getElementById('door2');
 let doorImage3 = document.getElementById('door3');
+let boxscore = document.getElementById('score');
+let boxbestscore = document.getElementById('bestscore');
+let score = 0;
+let bestscore = 0;
 let numClosedDoors = 3;
 let openDoor1
 let openDoor2
@@ -93,8 +97,16 @@ const startRound=()=>{
 const gameover=(status)=>{
     if (status==='win'){
         startButton.innerHTML="You win! Play again?"
+        score++;
+        boxscore.innerHTML=score;
+        if (score>bestscore){
+            bestscore=score;
+            boxbestscore.innerHTML=bestscore;
+        }
     }else{
-        startButton.innerHTML="Game over! Play again?"
+        startButton.innerHTML="Game over! Play again?" 
+        score=0;
+        boxscore.innerHTML=score
     }
     currentlyPlaying=false
 }
@@ -135,4 +147,5 @@ const playDoor=(door)=>{
         gameover()
     }
 }
+
 startRound()
